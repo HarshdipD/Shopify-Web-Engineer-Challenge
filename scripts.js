@@ -19,24 +19,24 @@ function star(i)
 	let stars = localStorage.getItem("fav");
 	if (!stars)			// if no stars at all
 	{
-		localStorage.setItem("fav", "[" + i + "]");							// initiate storage
+		localStorage.setItem("fav", "[" + i + "]");				// initiate storage
 		$("#star" + i).attr("style", "font-size: 20px; color:#408c43;");	//change color
 	}
-	else if (JSON.parse(stars).indexOf(i) > -1)				// the item is starred => unstar
+	else if (JSON.parse(stars).indexOf(i) > -1)			// the item is starred => unstar
 	{
-		stars = JSON.parse(stars);							// string => object (array)
-		stars.splice(stars.indexOf(i), 1);					// remove the item from star
+		stars = JSON.parse(stars);				// string => object (array)
+		stars.splice(stars.indexOf(i), 1);			// remove the item from star
 		localStorage.setItem("fav", JSON.stringify(stars));	// write in local storage
 		$("#star" + i).attr("style", "font-size: 20px;");	// uncolour star
 	}
 	else
 	{
 		stars = JSON.parse(stars);
-		stars.push(i);										// add the item to star
+		stars.push(i);						// add the item to star
 		localStorage.setItem("fav", JSON.stringify(stars));
 		$("#star" + i).attr("style", "font-size: 20px; color:#408c43;");
 	}
-	displayFavourites();									//Display updated favourites list
+	displayFavourites();						//Display updated favourites list
 };
 
 //This function displays list items that are favourited
@@ -50,7 +50,7 @@ function displayFavourites()
 	}
 	else
 	{
-		$.getJSON(url, function(response)		// since stars are indexes, we'll need the actual data
+		$.getJSON(url, function(response)	// since stars are indexes, we'll need the actual data
 		{
 			var star_content = '';
 			if(response.length)
