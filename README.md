@@ -3,7 +3,7 @@
   
 ## Links
   - Hosted Version for testing: https://harshdipd.github.io/Shopify-Web-Engineer-challenge/
-  - Codebase: https://github.com/HarshdipD/Shopify-Web-Engineer-Challenge
+  - Codebase: https://github.com/HarshdipD/Shopify-Web-Engineer-challenge
  
 
 ## The Challenge
