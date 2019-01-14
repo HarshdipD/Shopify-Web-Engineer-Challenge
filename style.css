@@ -1,0 +1,163 @@
+/*
+SHOPIFY WEB ENGINEER CHALLENGE
+Author: Harshdip Singh Deogan
+File - style.css
+Highlights:
+	- Project created using HTML, CSS, JavaScript, jQuery
+	- No CSS framework used
+	- Works as required by the challege
+	- Fade in animation for results
+	- Responsive design
+*/
+body *
+{
+	overflow: hidden;
+	font-family: Arial;
+}
+/* Gradient */
+.bg_head
+{
+	background: #304496; /* Old browsers */
+	background: -moz-linear-gradient(left, #304496 0%, #098e45 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #304496 0%,#098e45 100%); /* Chrome10-25, Safari5.1-6 */
+	background: linear-gradient(to right, #304496 0%,#098e45 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#304496', endColorstr='#098e45',GradientType=1 ); /* IE6-9 */
+}
+.heading
+{
+	color: white;
+	padding: 20px 0;
+}
+
+.search_box
+{
+	display: -webkit-box;  /* iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* Safari 6.1+. iOS 7.1+, BB10 */
+	display: flex;         /* Spec - Firefox, Chrome, Opera */
+	
+	justify-content: center;
+	align-items: center;
+	padding-top: 15px;
+}
+
+input
+{
+	width: 82.5%;
+	padding: 14px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+.search_button
+{
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	margin: 0px 15px;
+	cursor: pointer;
+}
+.search_button:hover
+{
+	background-color: #408c43;
+}
+/*To display icon inverted*/
+.mirror{
+    display: inline-block; 
+    font-size: 30px;
+
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.main_div
+{
+	padding: 10px 60px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding: 10px 10px 10px 10px;
+}
+
+/*Fade in animation for results*/
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.fav
+{
+	background-color: #eff5ff;
+}
+
+.fav_head
+{
+	padding-left: 60px;
+	color: #408c43;
+}
+
+
+.star_button
+{
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 8px 10px -10px 0;
+	color: #d8d8d8;
+	cursor: pointer;
+}
+.star_button:hover
+{
+	color: #408c43;
+}
+
+/*Responsive design parameters*/
+@media only screen and (max-width: 600px) {
+  .main_div {
+	padding: 10px 10px;
+  }
+  .fav-head{
+	padding-left: 10px;
+  }
+  .column{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	padding: 10px 0px 10px 5px;
+  }
+}

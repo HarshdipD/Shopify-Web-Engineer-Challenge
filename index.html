@@ -1,0 +1,53 @@
+<!--
+SHOPIFY WEB ENGINEER CHALLENGE
+Author: Harshdip Singh Deogan
+File - index.html
+Highlights:
+	- Project created using HTML, CSS, JavaScript, jQuery
+	- No CSS framework used
+	- Works as required by the challege
+	- Fade in animation for results
+	- Responsive design
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Toronto Waste Lookup - Shopify Web Engineer challenge</title>
+	<!--External CSS file-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--Icons for search button and stars-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--To let the browser know that the page is responsive-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="bg_head">
+		<!--Heading-->
+		<h1 align="center" class="heading">Toronto Waste Lookup</h1>
+	</div>
+
+	<!-- Search box -->
+	<div class="search_box">
+			<input type="text" id="term" placeholder="Search for how to handle your garbage...">
+			<p class="search_button"><i class="material-icons mirror" style="font-size: 35px;">search</i></p>
+	</div>
+
+	<!--Display results-->
+	<div id="table_item" class="main_div"></div>
+	
+	<!--Display favourites-->
+	<div class="fav">
+		<h2 class="fav_head">Favorites</h2>
+		<div id="saved_items" class="main_div"></div>
+	</div>
+
+
+	<!--SCRIPTS-->
+	<!--JavaScript File-->
+	<script src="scripts.js"></script>
+	<!--data.json-->
+	<script src="data.json"></script>
+</body>
+</html>
