@@ -2,7 +2,7 @@
   An optional coding challenge to complete when applying to Shopify for the Summer 2019 Web Engineer Intern position.
   
 ## Links
-  - Hosted Version for testing: https://harshdipd.github.io/Shopify-Web-Engineer-Challenge/
+  - Hosted Version for testing: https://harshdipd.github.io/Shopify-Web-Engineer-challenge/
   - Codebase: https://github.com/HarshdipD/Shopify-Web-Engineer-Challenge
  
 
